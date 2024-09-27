@@ -164,13 +164,25 @@ Good luck finding a new job!
 
 Can you find the problem with the record? Click on the part of the image you find suspicious to continue. 
 
-&lt;img src=&quot;https://raw.githubusercontent.com/EvavandenHurk/StolenArchive/refs/heads/main/images/StolenArchiveKlein.jpg&quot; alt=&quot;&quot; usemap=&quot;#mapname&quot;&gt;
+<div style="position: relative; width: 100%; max-width: 600px;">
+  <!-- Your image -->
+  <img src="https://raw.githubusercontent.com/EvavandenHurk/StolenArchive/refs/heads/main/images/StolenArchiveKlein.jpg" style="width: 100%;" alt="Map Image">
 
-&lt;map name=&quot;mapname&quot;&gt;
-  &lt;area shape=&quot;rect&quot; coords=&quot;232,333,469,345&quot; href=&quot;passage1&quot; alt=&quot;Description&quot;&gt;
-  &lt;area shape=&quot;rect&quot; coords=&quot;109,474,219,510&quot; href=&quot;passage2&quot; alt=&quot;Description&quot;&gt;
-  &lt;area shape=&quot;rect&quot; coords=&quot;425,554,448,576&quot; href=&quot;passage2&quot; alt=&quot;Description&quot;&gt;
-&lt;/map&gt;
+  <!-- Clickable area for passage1 -->
+  <<click "Go to passage1">>
+    <div style="position: absolute; top: 333px; left: 232px; width: 237px; height: 12px;"></div>
+  <</click>>
+
+  <!-- Clickable area for passage2 -->
+  <<click "Go to passage2">>
+    <div style="position: absolute; top: 474px; left: 109px; width: 110px; height: 36px;"></div>
+  <</click>>
+
+  <!-- Another clickable area for passage2 -->
+  <<click "Go to passage2">>
+    <div style="position: absolute; top: 554px; left: 425px; width: 23px; height: 22px;"></div>
+  <</click>>
+</div>
 
 </tw-passagedata><tw-passagedata pid="6" name="passage1" tags="" position="600,400" size="100,100">What you find troubles you deeply and you find it difficult to sleep that night. 
 
