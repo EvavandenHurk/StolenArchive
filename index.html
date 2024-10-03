@@ -164,7 +164,7 @@ Good luck finding a new job!
 
 Can you find the problem with the record? Click on the part of the image you find suspicious to continue. 
 
-&lt;img src= &quot;https://raw.githubusercontent.com/EvavandenHurk/StolenArchive/refs/heads/main/images/british-newspapers-881358_1280.jpg&quot; width=100% height=auto&gt;</tw-passagedata><tw-passagedata pid="5" name="investigation" tags="investigation" position="450,450" size="100,100">You decide to investigate further. 
+&lt;img src= &quot;https://raw.githubusercontent.com/EvavandenHurk/StolenArchive/refs/heads/main/images/british-newspapers-881358_1280.jpg&quot; width=100% height=auto&gt;</tw-passagedata><tw-passagedata pid="6" name="investigation" tags="investigation" position="450,450" size="100,100">You decide to investigate further. 
 
 Can you find the problem with the record? Click on the part of the image you find suspicious to continue. 
 
@@ -178,17 +178,15 @@ Can you find the problem with the record? Click on the part of the image you fin
     &lt;area shape=&quot;rect&quot; coords=&quot;425,554,448,576&quot; alt=&quot;Area 3&quot; href=&quot;javascript:void(0);&quot; 
           onclick=&quot;SugarCube.Engine.play(&#39;passage2&#39;);&quot;&gt;
 &lt;/map&gt;
-
-</tw-passagedata><tw-passagedata pid="6" name="passage1" tags="" position="600,400" size="100,100">What you find troubles you deeply and you find it difficult to sleep that night. 
+</tw-passagedata><tw-passagedata pid="7" name="passage1" tags="" position="600,400" size="100,100">What you find troubles you deeply and you find it difficult to sleep that night. 
 
 The next morning you wake up to find an e-mail in your corporate mailbox. At first you think it&#39;s a spam e-mail, but as you look closer you realize the truth: it&#39;s an e-mail from an anonymous writer. The writer claims to have stolen information from the record about the prime minister! He&#39;s threatening to go public with the information, but since the spyware on your pc showed him how you tracked down you were hacked pretty quickly, he wants to play a game with you. 
 
-You open the attachment to the e-mail and find a [[quiz]].</tw-passagedata><tw-passagedata pid="7" name="StoryInit" tags="" position="200,150" size="100,100">&lt;&lt;cacheaudio &quot;mainsong&quot; &quot;https://github.com/EvavandenHurk/StolenArchive/raw/refs/heads/main/music/chill-lofi-hip-hop-type-beat-fog-211509.mp3&quot;&gt;&gt;
+You open the attachment to the e-mail and find a [[quiz]].</tw-passagedata><tw-passagedata pid="8" name="StoryInit" tags="" position="200,150" size="100,100">&lt;&lt;cacheaudio &quot;mainsong&quot; &quot;https://github.com/EvavandenHurk/StolenArchive/raw/refs/heads/main/music/chill-lofi-hip-hop-type-beat-fog-211509.mp3&quot;&gt;&gt;
  
 
-&lt;set $quizScore to 0&gt;
-&lt;/set&gt;
-</tw-passagedata><tw-passagedata pid="8" name="passage2" tags="" position="625,550" size="100,100">You don&#39;t know exactly what you are looking for and what you are looking at, but decide tomorrow is another day and go to bed. 
+&lt;&lt;set $quizScore to 0&gt;&gt;
+</tw-passagedata><tw-passagedata pid="9" name="passage2" tags="" position="625,550" size="100,100">You don&#39;t know exactly what you are looking for and what you are looking at, but decide tomorrow is another day and go to bed. 
 
 The next morning you wake up to find an e-mail in your corporate mailbox. At first you think it&#39;s a spam e-mail, but as you look closer you realize the truth: it&#39;s an e-mail from an anonymous writer. The writer claims to have stolen information from the record about the prime minister! He has installed spyware on your computer and has traced your activities trying to find out what happened. Alas, since you weren&#39;t able to find out your account was hacked, he has decided to release the information from the record to the public...
 
@@ -196,104 +194,89 @@ The next day, you see the headlines about the prime minister and the scandal the
 
 Good luck finding a new job!
 
-&lt;img src= &quot;https://raw.githubusercontent.com/EvavandenHurk/StolenArchive/refs/heads/main/images/british-newspapers-881358_1280.jpg&quot; width=100% height=auto&gt;</tw-passagedata><tw-passagedata pid="9" name="quiz" tags="" position="750,300" size="100,100">&lt;html&gt;
-&lt;div class=&quot;quiz-container&quot;&gt;
+&lt;img src= &quot;https://raw.githubusercontent.com/EvavandenHurk/StolenArchive/refs/heads/main/images/british-newspapers-881358_1280.jpg&quot; width=100% height=auto&gt;</tw-passagedata><tw-passagedata pid="10" name="quiz" tags="" position="825,350" size="100,100">&lt;div class=&quot;quiz-container&quot;&gt;
   &lt;div id=&quot;quiz&quot;&gt;&lt;/div&gt;
   &lt;button id=&quot;submit&quot;&gt;Submit Quiz&lt;/button&gt;
   &lt;div id=&quot;results&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;
+
 &lt;script&gt;
-  const quizContainer = document.getElementById(&#39;quiz&#39;);
-const resultsContainer = document.getElementById(&#39;results&#39;);
-const submitButton = document.getElementById(&#39;submit&#39;);
+(function() {
+    const quizContainer = document.getElementById(&#39;quiz&#39;);
+    const submitButton = document.getElementById(&#39;submit&#39;);
 
-const myQuestions = [
-  {
-    question: &quot;What is the PRONOM-code for &#39;WACZ&#39;?&quot;,
-    answers: {
-      a: &#39;948&#39;,
-      b: &#39;1840&#39;,
-      c: &#39;1223&#39;
-    },
-    correctAnswer: &#39;b&#39;
-  },
-  
-  {
-    question: &quot;What is the name of the approach to e-mailarchiving that calls for the preservation of the full email accounts of staff members in identified key roles?&quot;,
-    answers: {
-      a: &#39;Capstone&#39;,
-      b: &#39;Rosetta&#39;,
-      c: &#39;Stonehenge&#39;
-    },
-    correctAnswer: &#39;a&#39;
-  },
-  
-   {
-    question: &quot;What is not part of the functional OAIS-model?&quot;,
-    answers: {
-      a: &#39;Preservation Planning&#39;,
-      b: &#39;Access&#39;,
-      c: &#39;Discovery&#39;
-    },
-    correctAnswer: &#39;c&#39;
-  },
-];
+    const myQuestions = [
+      {
+        question: &quot;What is the PRONOM-code for &#39;WACZ&#39;?&quot;,
+        answers: { a: &#39;948&#39;, b: &#39;1840&#39;, c: &#39;1223&#39; },
+        correctAnswer: &#39;b&#39;
+      },
+      {
+        question: &quot;What is the name of the approach to e-mail archiving that calls for the preservation of the full email accounts of staff members in identified key roles?&quot;,
+        answers: { a: &#39;Capstone&#39;, b: &#39;Rosetta&#39;, c: &#39;Stonehenge&#39; },
+        correctAnswer: &#39;a&#39;
+      },
+      {
+        question: &quot;What is not part of the functional OAIS-model?&quot;,
+        answers: { a: &#39;Preservation Planning&#39;, b: &#39;Access&#39;, c: &#39;Discovery&#39; },
+        correctAnswer: &#39;c&#39;
+      },
+    ];
 
-function buildQuiz() {
-  const output = [];
-  myQuestions.forEach((currentQuestion, questionNumber) =&gt; {
-    const answers = [];
-    for (letter in currentQuestion.answers) {
-      answers.push(
-        `&lt;label&gt;
-          &lt;input type=&quot;radio&quot; name=&quot;question${questionNumber}&quot; value=&quot;${letter}&quot;&gt;
-          ${letter} :
-          ${currentQuestion.answers[letter]}
-        &lt;/label&gt;`
-      );
+    function buildQuiz() {
+      const output = [];
+      myQuestions.forEach((currentQuestion, questionNumber) =&gt; {
+        const answers = [];
+        for (const letter in currentQuestion.answers) {
+          answers.push(
+            `&lt;label&gt;
+              &lt;input type=&quot;radio&quot; name=&quot;question${questionNumber}&quot; value=&quot;${letter}&quot;&gt;
+              ${letter} : ${currentQuestion.answers[letter]}
+            &lt;/label&gt;`
+          );
+        }
+        output.push(
+          `&lt;div class=&quot;question&quot;&gt;${currentQuestion.question}&lt;/div&gt;
+           &lt;div class=&quot;answers&quot;&gt;${answers.join(&#39;&#39;)}&lt;/div&gt;`
+        );
+      });
+      quizContainer.innerHTML = output.join(&#39;&#39;);
     }
-    output.push(
-      `&lt;div class=&quot;question&quot;&gt; ${currentQuestion.question} &lt;/div&gt;
-       &lt;div class=&quot;answers&quot;&gt; ${answers.join(&#39;&#39;)} &lt;/div&gt;`
-    );
-  });
-  quizContainer.innerHTML = output.join(&#39;&#39;);
-}
 
-function showResults() {
-  const answerContainers = quizContainer.querySelectorAll(&#39;.answers&#39;);
-  let numCorrect = 0;
+    function showResults() {
+      const answerContainers = quizContainer.querySelectorAll(&#39;.answers&#39;);
+      let numCorrect = 0;
 
-  // Check the answers
-  myQuestions.forEach((currentQuestion, questionNumber) =&gt; {
-    const answerContainer = answerContainers[questionNumber];
-    const selector = `input[name=question${questionNumber}]:checked`;
-    const userAnswer = (answerContainer.querySelector(selector) || {}).value;
+      myQuestions.forEach((currentQuestion, questionNumber) =&gt; {
+        const answerContainer = answerContainers[questionNumber];
+        const selector = `input[name=question${questionNumber}]:checked`;
+        const userAnswer = (answerContainer.querySelector(selector) || {}).value;
 
-    if (userAnswer === currentQuestion.correctAnswer) {
-      numCorrect++;  // Increment correct answers
+        if (userAnswer === currentQuestion.correctAnswer) {
+          numCorrect++;  // Increment correct answers
+        }
+      });
+
+      // Determine which ending to navigate to and set it in the submit button&#39;s onclick event
+      if (numCorrect === myQuestions.length) {
+        // All answers correct, go to EndingA
+        submitButton.setAttribute(&#39;onclick&#39;, &quot;SugarCube.Engine.play(&#39;EndingA&#39;);&quot;);
+      } else {
+        // At least one wrong answer, go to EndingB
+        submitButton.setAttribute(&#39;onclick&#39;, &quot;SugarCube.Engine.play(&#39;EndingB&#39;);&quot;);
+      }
     }
-  });
 
-  // Store the score in Twine&#39;s State variable
-  State.variables.quizScore = numCorrect;
+    // Build the quiz
+    buildQuiz();
 
-  // Navigate to the appropriate passage based on the score
-  if (numCorrect === myQuestions.length) {
-    // All answers correct, go to EndingA
-    Engine.play(&quot;[[EndingA]]&quot;);
-  } else {
-    // At least one wrong answer, go to EndingB
-    Engine.play(&quot;[[EndingB]]&quot;);
-  }
-}
-
-
-buildQuiz();
-
-submitButton.addEventListener(&#39;click&#39;, showResults);
-
+    // Set up the event listener for the submit button to evaluate results first
+    submitButton.addEventListener(&#39;click&#39;, function() {
+      showResults();
+    });
+})();
 &lt;/script&gt;
+
 &lt;style&gt;
   .quiz-container {
     margin-top: 20px;
@@ -306,7 +289,7 @@ submitButton.addEventListener(&#39;click&#39;, showResults);
     margin-bottom: 10px;
   }
 &lt;/style&gt;
-&lt;html&gt;</tw-passagedata><tw-passagedata pid="10" name="EndingA" tags="" position="875,250" size="100,100">You hope you&#39;ve answered all the questions correctly and wipe the sweat from your brow. 
+</tw-passagedata><tw-passagedata pid="11" name="EndingA" tags="" position="825,175" size="100,100">You hope you&#39;ve answered all the questions correctly and wipe the sweat from your brow. 
 
 A few minutes later you receive an e-mail from the anonymous writer:
 &quot;Congratulations, you&#39;ve saved yourself and the ex prime minister from a huge embarrasement. I&#39;ll let you off the hook this time.&quot;
@@ -316,7 +299,7 @@ You jump up and do a little victory dance. The next day you get together with th
 Congrats $name, you win the game!
 
 If you want to play again, click [[here|start]]
-</tw-passagedata><tw-passagedata pid="11" name="EndingB" tags="" position="875,375" size="100,100">You hope you&#39;ve answered all the questions correctly and wipe the sweat from your brow. 
+</tw-passagedata><tw-passagedata pid="12" name="EndingB" tags="" position="650,175" size="100,100">You hope you&#39;ve answered all the questions correctly and wipe the sweat from your brow. 
 
 A few minutes later you receive an e-mail from the anonymous writer:
 &quot;You&#39;ve tried and you&#39;ve failed. Too bad you couldn&#39;t save the ex prime minister and yourself from this embarrassement.&quot;
